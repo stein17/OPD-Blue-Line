@@ -1533,7 +1533,7 @@
       <convert type="OPDRefString">CurrentRef</convert>
     </widget>
     <widget name="datetime" position="140,926" size="400,40" font="Regular; 32" halign="left" transparent="1" />
-    <eLabel text="Ende:" position="975,926" size="110,40" font="Regular; 32" halign="center" backgroundColor="black" foregroundColor="white" transparent="1" zPosition="1" />
+    <eLabel text="End:" position="975,926" size="110,40" font="Regular; 32" halign="center" backgroundColor="black" foregroundColor="white" transparent="1" zPosition="1" />
     <eLabel text="Start:" position="30,925" size="110,40" font="Regular; 32" halign="center" backgroundColor="black" foregroundColor="white" transparent="1" zPosition="1" />
     <widget name="epg_description" position="20,134" size="1210,722" font="Regular;34" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1" />
     <widget source="session.CurrentService" position="1622,1030" size="63,35" render="Pixmap" pixmap="OPD-Blue-Line/icons/ico_sd_on.png" zPosition="1" alphatest="blend">
@@ -1594,7 +1594,7 @@
     <widget source="session.VideoPicture" render="Pig" position="1253,126" size="640,360" zPosition="5" backgroundColor="backgroundPig" />
     <eLabel text="Next:" position="1249,504" size="150,40" font="Regular; 34" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="white" />
     <eLabel text="Start:" position="1300,560" size="95,30" font="Regular; 30" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="white" />
-    <eLabel text="Ende:" position="1570,559" size="90,30" font="Regular; 30" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="white" />
+    <eLabel text="End:" position="1570,559" size="90,30" font="Regular; 30" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="white" />
     <widget source="session.Event_Next" render="OPDRunningText" options="movetype=running,startdelay=10000,steptime=80,direction=top,startpoint=0,wrap=1,always=0,repeat=2,oneshot=1" position="1252,606" size="640,360" font="Regular;32" halign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="2">
       <convert type="EventName">FullDescription</convert>
     </widget>
@@ -1638,7 +1638,7 @@
       <convert type="ClockToText">Format:%a, %d.%m.%Y  %H:%M</convert>
     </widget>
     <widget name="bouquetlist" position="579,25" size="700,50" zPosition="2" itemHeight="45" font="Regular;36" borderColor="darkgrey" borderWidth="1" foregroundColor="white" foregroundColorSelected="bluetitle" backgroundColor="black" backgroundColorSelected="bluelabel" transparent="1" />
-    <eLabel text="Favoriten" position="1403,1016" size="200,40" font="Regular; 30" halign="left" transparent="1" valign="center" />
+    <eLabel text="Favorites" position="1403,1016" size="200,40" font="Regular; 30" halign="left" transparent="1" valign="center" />
     <eLabel text="0" position="1319,1021" size="40,36" font="Arial; 35" halign="center" transparent="1" valign="center" />
     <ePixmap position="1277,1019" size="36,36" zPosition="10" pixmap="OPD-Blue-Line/buttons/left.png" alphatest="on" />
     <ePixmap position="1365,1019" size="36,36" zPosition="10" pixmap="OPD-Blue-Line/buttons/right.png" alphatest="on" />
@@ -1771,7 +1771,7 @@
       <convert type="ClockToText">
       </convert>
     </widget>
-    <eLabel text="Favoriten" position="1403,1016" size="200,40" font="Regular; 30" halign="left" transparent="1" valign="center" />
+    <eLabel text="Favorites" position="1403,1016" size="200,40" font="Regular; 30" halign="left" transparent="1" valign="center" />
     <eLabel text="0" position="1319,1021" size="40,36" font="Arial; 35" halign="center" transparent="1" valign="center" />
     <ePixmap position="1277,1019" size="36,36" zPosition="10" pixmap="OPD-Blue-Line/buttons/left.png" alphatest="on" />
     <ePixmap position="1365,1019" size="36,36" zPosition="10" pixmap="OPD-Blue-Line/buttons/right.png" alphatest="on" />
@@ -3576,8 +3576,8 @@
     <widget source="Service" render="OPDRunningText" options="movetype=running,startdelay=10000,steptime=60,direction=top,startpoint=0,wrap=1,always=0,repeat=2,oneshot=1" position="1255,515" size="636,350" font="Regular;34" zPosition="2" backgroundColor="background" foregroundColor="cyan1" transparent="1" valign="top">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
-    <eLabel text="Grösse:" position="1289,874" size="130,40" font="Regular;32" foregroundColor="grey" backgroundColor="bluelabel" transparent="1" zPosition="2" />
-    <eLabel text="Zeit:" position="1673,874" size="100,40" font="Regular;32" foregroundColor="grey" backgroundColor="bluelabel" transparent="1" zPosition="2" />
+    <eLabel text="Size:" position="1289,874" size="130,40" font="Regular;32" foregroundColor="grey" backgroundColor="bluelabel" transparent="1" zPosition="2" />
+    <eLabel text="Time:" position="1673,874" size="100,40" font="Regular;32" foregroundColor="grey" backgroundColor="bluelabel" transparent="1" zPosition="2" />
     <widget name="key_red" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
     <widget name="key_green" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
     <widget name="key_yellow" position="675,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
@@ -3655,9 +3655,9 @@
       <convert type="ClockToText">Format:%H:%M:%S</convert>
     </widget>
     <eLabel text="Min." font="Regular; 32" position="863,797" size="90,40" halign="left" foregroundColor="white" backgroundColor="black" transparent="1" />
-    <eLabel text="endet um" font="Regular; 32" position="1229,960" size="160,40" halign="right" backgroundColor="black" transparent="1" />
-    <eLabel text="Uhr" font="Regular; 32" position="1494,960" size="70,40" halign="left" foregroundColor="white" backgroundColor="black" transparent="1" />
-    <eLabel text="Laufzeit:" font="Regular; 32" position="565,797" size="160,40" halign="right" foregroundColor="white" backgroundColor="black" transparent="1" />
+    <eLabel text="ends at" font="Regular; 32" position="1229,960" size="160,40" halign="right" backgroundColor="black" transparent="1" />
+    <eLabel text="Clock" font="Regular; 32" position="1494,960" size="70,40" halign="left" foregroundColor="white" backgroundColor="black" transparent="1" />
+    <eLabel text="Running time:" font="Regular; 32" position="565,797" size="160,40" halign="right" foregroundColor="white" backgroundColor="black" transparent="1" />
     <widget source="global.CurrentTime" render="OPDWatches" position="1660,863" size="160,160" zPosition="4" foregroundColor="red" alphatest="blend">
       <convert type="OPDAnalogClock">secHand</convert>
     </widget>
@@ -3747,9 +3747,9 @@
       <convert type="ClockToText">Format:%H:%M:%S</convert>
     </widget>
     <eLabel text="Min." font="Regular; 32" position="863,797" size="90,40" halign="left" foregroundColor="white" backgroundColor="black" transparent="1" />
-    <eLabel text="endet um" font="Regular; 32" position="1230,960" size="160,40" halign="right" backgroundColor="black" transparent="1" />
-    <eLabel text="Uhr" font="Regular; 32" position="1494,960" size="70,40" halign="left" foregroundColor="white" backgroundColor="black" transparent="1" />
-    <eLabel text="Laufzeit:" font="Regular; 32" position="565,797" size="160,40" halign="right" foregroundColor="white" backgroundColor="black" transparent="1" />
+    <eLabel text="ends at" font="Regular; 32" position="1230,960" size="160,40" halign="right" backgroundColor="black" transparent="1" />
+    <eLabel text="Clock" font="Regular; 32" position="1494,960" size="70,40" halign="left" foregroundColor="white" backgroundColor="black" transparent="1" />
+    <eLabel text="Running time:" font="Regular; 32" position="565,797" size="160,40" halign="right" foregroundColor="white" backgroundColor="black" transparent="1" />
     <!-- Analogic Clock -->
     <widget source="global.CurrentTime" render="OPDWatches" position="1660,863" size="160,160" zPosition="4" foregroundColor="red" alphatest="blend">
       <convert type="OPDAnalogClock">secHand</convert>
@@ -4045,7 +4045,7 @@
     <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
     <widget source="key_red" render="Label" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
     <eLabel text="Its recommend to create a Fullbackup before update!" position="70,893" size="800,40" zPosition="1" font="Regular; 32" foregroundColor="white" halign="left" backgroundColor="background" transparent="1" />
-    <eLabel text="Empfohlen wird ein Fullbackup vor dem Update!" position="70,821" size="800,40" zPosition="1" font="Regular; 32" foregroundColor="white" halign="left" backgroundColor="background" transparent="1" />
+    <eLabel text="Recommended is a full backup before the update!" position="70,821" size="800,40" zPosition="1" font="Regular; 32" foregroundColor="white" halign="left" backgroundColor="background" transparent="1" />
     <ePixmap position="976,697" size="256,256" pixmap="OPD-Blue-Line/icons/opd_icon.png" alphatest="blend" />
     <eLabel name="vertikalline" position="929,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
   </screen>
@@ -7154,7 +7154,7 @@ self.instance.move(ePoint((1920-wsizex), (1280-wsizex)/2, (720-wsizey)/(count &g
     <widget name="description" position="950,130" size="300,540" font="Regular; 30" foregroundColor="white" halign="center" backgroundColor="dark" transparent="1" />
     <widget name="choosen" position="30,130" size="875,90" itemHeight="40" font="Regular; 34" halign="center" valign="center" scrollbarMode="showOnDemand" backgroundColor="background" transparent="0" />
     <widget name="list" position="30,248" size="875,700" itemHeight="40" font="Regular; 32" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="dark" transparent="1" zPosition="1" />
-    <eLabel text="Speichern" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <eLabel text="To save" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
     <eLabel position="30,235" size="875,2" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
     <ePixmap pixmap="OPD-Blue-Line/buttons/key_ok.png" position="1052,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
     <ePixmap pixmap="OPD-Blue-Line/buttons/key_exit.png" position="1123,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" name="#" />
@@ -8228,7 +8228,7 @@ self.instance.move(ePoint((1920-wsizex), (1280-wsizex)/2, (720-wsizey)/(count &g
     <widget source="key_green" render="Label" position="372,1000" size="80,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
   </screen>
 <screen name="AtileHD_About" position="0,0" size="1920,1080" title="AtileHD_About" flags="wfNoBorder" backgroundColor="transparent">
-    <eLabel text="Skin Informationen" position="10,25" size="900,50" noWrap="1" valign="center" font="Regular; 36" halign="left" transparent="1" zPosition="1" />
+    <eLabel text="Skin information" position="10,25" size="900,50" noWrap="1" valign="center" font="Regular; 36" halign="left" transparent="1" zPosition="1" />
     <ePixmap pixmap="OPD-Blue-Line/menu/bg1280.png" position="0,0" zPosition="-20" size="1280,1080" />
     <widget source="global.CurrentTime" render="Label" position="508,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
