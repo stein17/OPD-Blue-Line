@@ -3305,7 +3305,7 @@
     </widget>
     <widget source="global.CurrentTime" render="OPDSYSTemp" position="192,674" size="90,45" font="Regular;32" halign="left" valign="bottom" noWrap="1" transparent="1" zPosition="3" />
     <widget source="session.CurrentService" render="Label" position="30,908" size="880,45" zPosition="1" font="Regular; 32" halign="left" valign="center" transparent="0">
-      <convert type="OPDCPUInfo">CPU Auslastung:$0 Core 1:$1  Core 2:$2</convert>
+      <convert type="OPDCPUInfo">CPU Utilization:$0 Core 1:$1  Core 2:$2</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="30,767" size="880,45" zPosition="1" font="Regular; 30" halign="left" valign="center" transparant="1">
       <convert type="OPDReceiverInfo">FLASHINFO</convert>
