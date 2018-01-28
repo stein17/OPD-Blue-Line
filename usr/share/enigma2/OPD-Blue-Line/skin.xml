@@ -764,12 +764,12 @@
   </widget>
   <widget source="session.FrontendInfo" render="Pixmap" pixmap="OPD-Blue-Line/icons/dvbt.png" position="1380,55" size="70,70" zPosition="2" alphatest="blend">
     <convert type="FrontendInfo">TYPE</convert>
-    <convert type="ValueRange">2,2</convert>
+    <convert type="ValueRange">1,1</convert>
     <convert type="ConditionalShowHide" />
   </widget>
   <widget source="session.FrontendInfo" render="Pixmap" pixmap="OPD-Blue-Line/icons/kabel.png" position="1380,55" size="70,70" zPosition="2" alphatest="blend">
     <convert type="FrontendInfo">TYPE</convert>
-    <convert type="ValueRange">1,1</convert>
+    <convert type="ValueRange">2,2</convert>
     <convert type="ConditionalShowHide" />
   </widget>
   <widget source="session.CurrentService" render="Label" position="1470,35" size="435,36" font="Regular;34" halign="left" foregroundColor="green" backgroundColor="background10" transparent="1" zPosition="2">
@@ -1235,12 +1235,12 @@
     </widget>
     <widget source="session.FrontendInfo" render="Pixmap" pixmap="OPD-Blue-Line/icons/dvbt.png" position="1147,13" size="70,70" zPosition="2" alphatest="blend">
       <convert type="FrontendInfo">TYPE</convert>
-      <convert type="ValueRange">2,2</convert>
+      <convert type="ValueRange">1,1</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="session.FrontendInfo" render="Pixmap" pixmap="OPD-Blue-Line/icons/kabel.png" position="1147,13" size="70,70" zPosition="2" alphatest="blend">
       <convert type="FrontendInfo">TYPE</convert>
-      <convert type="ValueRange">1,1</convert>
+      <convert type="ValueRange">2,2</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget name="list" position="10,110" size="1220,880" scrollbarMode="showOnDemand" transparent="1" zPosition="1" serviceItemHeight="60" serviceNumberFont="Regular;38" serviceNameFont="Regular;43" serviceInfoFont="Regular;37" foregroundColor="white" foregroundColorSelected="cyan1" backgroundColor="black" backgroundColorSelected="backgroundBlue" foregroundColorMarkedSelected="yellow" colorServiceDescription="cyan1" colorServiceDescriptionSelected="white" colorServiceRecording="red" foregroundColorServiceNotAvail="dark" colorEventProgressbar="bluelabel" colorEventProgressbarBorder="foregroundClock" colorEventProgressbarBorderSelected="blue" fieldMargins="15" nonplayableMargins="15" itemsDistances="8" progressBarWidth="80" progressPercentWidth="90" progressbarHeight="12" />
@@ -4826,12 +4826,12 @@
     </widget>
     <widget source="FrontendInfo" render="Pixmap" pixmap="OPD-Blue-Line/icons/kabel.png" position="700,880" size="96,96" transparent="1" alphatest="blend">
       <convert type="FrontendInfo">TYPE</convert>
-      <convert type="ValueRange">1,1</convert>
+      <convert type="ValueRange">2,2</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="FrontendInfo" render="Pixmap" pixmap="OPD-Blue-Line/icons/dvbt.png" position="700,879" size="96,96" transparent="1" alphatest="blend">
       <convert type="FrontendInfo">TYPE</convert>
-      <convert type="ValueRange">2,2</convert>
+      <convert type="ValueRange">1,1</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget name="network" position="30,130" size="875,45" font="Regular;30" backgroundColor="background" foregroundColor="white" transparent="1" />
