@@ -4050,8 +4050,7 @@
     </widget>
     <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
     <widget source="key_red" render="Label" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
-    <eLabel text="Its recommend to create a Fullbackup before update!" position="70,893" size="800,40" zPosition="1" font="Regular; 32" foregroundColor="white" halign="left" backgroundColor="background" transparent="1" />
-    <eLabel text="Recommended is a full backup before the update!" position="70,821" size="800,40" zPosition="1" font="Regular; 32" foregroundColor="white" halign="left" backgroundColor="background" transparent="1" />
+    <eLabel text="Its recommend to create a Fullbackup before update!" position="70,821" size="800,40" zPosition="1" font="Regular; 32" foregroundColor="white" halign="left" backgroundColor="background" transparent="1" />
     <ePixmap position="976,697" size="256,256" pixmap="OPD-Blue-Line/icons/opd_icon.png" alphatest="blend" />
     <eLabel name="vertikalline" position="929,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
   </screen>
