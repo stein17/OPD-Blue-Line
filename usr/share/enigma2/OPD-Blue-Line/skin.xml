@@ -7444,7 +7444,7 @@ self.instance.move(ePoint((1920-wsizex), (1280-wsizex)/2, (720-wsizey)/(count &g
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
     </widget>
     <widget source="Title" render="Label" position="10,25" size="900,50" font="Regular; 36" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1" />
-    <widget name="list" position="30,130" size="870,820" itemHeight="45" font="Regular;32" zPosition="10" scrollbarMode="showOnDemand" transparent="1" />
+    <widget name="list" position="30,130" size="900,820" itemHeight="45" font="Regular;36" zPosition="10" scrollbarMode="showOnDemand" transparent="1" />
     <eLabel text="OpenDroid" position="70,1020" size="1000,110" zPosition="1" font="Adam; 110" halign="left" foregroundColor="blue" backgroundColor="background" borderColor="white" borderWidth="1" transparent="1" valign="top" />
     <eLabel name="vertikalline" position="940,123" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
     <ePixmap position="981,699" size="256,256" pixmap="OPD-Blue-Line/icons/opd_icon.png" alphatest="blend" zPosition="1" />
