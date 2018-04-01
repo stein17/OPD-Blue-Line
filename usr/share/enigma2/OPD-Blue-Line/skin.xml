@@ -3851,10 +3851,10 @@
       <convert type="OPDAnalogClock">hourHand</convert>
     </widget>
     <widget name="speed" position="1269,811" size="300,60" font="Regular;32" halign="right" valign="center" foregroundColor="bernstein" backgroundColor="dark" transparent="1" zPosition="2" />
-    <widget name="statusicon" position="248,947" size="100,100" pixmaps="OPD-Blue-Line/icons/play.png,icons/pause.png,icons/stop.png,icons/forward.png,icons/rewind.png,icons/slow.png" alphatest="on" zPosition="2" />
+    <widget name="statusicon" position="238,867" size="100,100" pixmaps="OPD-Blue-Line/icons/play.png,icons/pause.png,icons/stop.png,icons/forward.png,icons/rewind.png,icons/slow.png" alphatest="on" zPosition="2" />
     <widget name="state" position="269,887" size="50,52" font="Regular;48" halign="left" foregroundColor="bernstein" backgroundColor="bluelabel" transparent="1" zPosition="2" />
     <widget name="eventname" position="377,877" size="1190,50" font="Regular; 34" halign="left" foregroundColor="white" backgroundColor="bluelabel" transparent="1" zPosition="2" />
-    <widget source="session.CurrentService" render="Picon" position="18,907" size="220,132" alphatest="blend" zPosition="1">
+    <widget source="session.CurrentService" render="Picon" position="31,873" size="220,132" alphatest="blend" zPosition="1">
       <convert type="ServiceName">Reference</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="379,955" size="200,50" font="Regular;40" halign="left" backgroundColor="background" zPosition="3">
