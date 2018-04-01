@@ -3851,10 +3851,10 @@
       <convert type="OPDAnalogClock">hourHand</convert>
     </widget>
     <widget name="speed" position="1269,811" size="300,60" font="Regular;32" halign="right" valign="center" foregroundColor="bernstein" backgroundColor="dark" transparent="1" zPosition="2" />
-    <widget name="statusicon" position="248,947" size="100,100" pixmaps="OPD-Blue-Line/icons/play.png,icons/pause.png,icons/stop.png,icons/forward.png,icons/rewind.png,icons/slow.png" alphatest="on" zPosition="2" />
+    <widget name="statusicon" position="238,867" size="100,100" pixmaps="OPD-Blue-Line/icons/play.png,icons/pause.png,icons/stop.png,icons/forward.png,icons/rewind.png,icons/slow.png" alphatest="on" zPosition="2" />
     <widget name="state" position="269,887" size="50,52" font="Regular;48" halign="left" foregroundColor="bernstein" backgroundColor="bluelabel" transparent="1" zPosition="2" />
     <widget name="eventname" position="377,877" size="1190,50" font="Regular; 34" halign="left" foregroundColor="white" backgroundColor="bluelabel" transparent="1" zPosition="2" />
-    <widget source="session.CurrentService" render="Picon" position="18,907" size="220,132" alphatest="blend" zPosition="1">
+    <widget source="session.CurrentService" render="Picon" position="31,873" size="220,132" alphatest="blend" zPosition="1">
       <convert type="ServiceName">Reference</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="379,955" size="200,50" font="Regular;40" halign="left" backgroundColor="background" zPosition="3">
@@ -4731,8 +4731,8 @@
     <widget source="nimlist" render="Listbox" position="30,130" size="875,820" enableWrapAround="1" transparent="1">
       <convert type="TemplatedMultiContent">
 				{"template": [
-				MultiContentEntryText(pos = (10, 3), size = (770, 40), color=0x73c6ff, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the nim name,
-				MultiContentEntryText(pos = (30, 37), size = (770, 60), font = 1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is a description of the nim settings,
+				MultiContentEntryText(pos = (10, 3), size = (740, 40), color=0x73c6ff, flags = RT_HALIGN_LEFT, text = 1), # index 1 is the nim name,
+				MultiContentEntryText(pos = (30, 37), size = (740, 60), font = 1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is a description of the nim settings,
 				],
 				"fonts": [gFont("Regular", 32), gFont("Regular", 30)],
 				"itemHeight": 110
@@ -7398,7 +7398,7 @@ self.instance.move(ePoint((1920-wsizex), (1280-wsizex)/2, (720-wsizey)/(count &g
     <widget name="label" position="10,150" halign="center" size="460,60" zPosition="1" font="Regular;20" valign="top" transparent="1" />
   </screen>
   <!--  Remove Addons FHD -->
-  <screen name="AddonsRemove" position="0,0" size="1920,1080" title="Remove plugin" flags="wfNoBorder" backgroundColor="transparent">
+  <screen name="AddonsRemove" position="0,0" size="1920,1080" title="Deinstalliere Plugins" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap pixmap="OPD-Blue-Line/menu/bg1920.png" position="0,0" zPosition="-20" size="1920,1080" />
     <widget source="global.CurrentTime" render="Label" position="1088,30" size="600,50" font="Regular; 36" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
@@ -7415,7 +7415,7 @@ self.instance.move(ePoint((1920-wsizex), (1280-wsizex)/2, (720-wsizey)/(count &g
     <widget name="key_blue" position="983,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
     <widget name="list" position="30,200" size="1160,750" itemHeight="80" font="Regular;34" foregroundColor="white" backgroundColor="black" transparent="1" scrollbarMode="showOnDemand" zPosition="2" enableWrapAround="1" />
     <widget name="status" position="1252,124" size="640,700" scrollbarMode="showNever" font="Regular;32" halign="center" noWrap="1" transparent="1" />
-    <eLabel name="" position="39,136" size="600,50" font="Regular; 32" text="List of plugins to uninstall" zPosition="3" halign="center" transparent="1" />
+    <eLabel name="" position="39,136" size="600,50" font="Regular; 32" text="Liste der zu Deinstallierenden Plugins" zPosition="3" halign="center" transparent="1" />
     <widget name="text" position="1250,845" size="640,110" zPosition="1" font="Regular; 32" halign="center" valign="center" foregroundColor="white" transparent="1" />
     <eLabel name="spaceused" text="% Flash Used..." position="1252,1015" size="250,40" font="Regular;30" halign="left" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="5" />
     <widget name="spaceused" position="1503,1020" size="400,30" foregroundColor="white" backgroundColor="blue" zPosition="3" />
@@ -7444,7 +7444,7 @@ self.instance.move(ePoint((1920-wsizex), (1280-wsizex)/2, (720-wsizey)/(count &g
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
     </widget>
     <widget source="Title" render="Label" position="10,25" size="900,50" font="Regular; 36" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1" />
-    <widget name="list" position="30,130" size="900,820" itemHeight="45" font="Regular;36" zPosition="10" scrollbarMode="showOnDemand" transparent="1" />
+    <widget name="list" position="30,130" size="870,820" itemHeight="45" font="Regular;32" zPosition="10" scrollbarMode="showOnDemand" transparent="1" />
     <eLabel text="OpenDroid" position="70,1020" size="1000,110" zPosition="1" font="Adam; 110" halign="left" foregroundColor="blue" backgroundColor="background" borderColor="white" borderWidth="1" transparent="1" valign="top" />
     <eLabel name="vertikalline" position="940,123" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
     <ePixmap position="981,699" size="256,256" pixmap="OPD-Blue-Line/icons/opd_icon.png" alphatest="blend" zPosition="1" />
@@ -7495,7 +7495,7 @@ self.instance.move(ePoint((1920-wsizex), (1280-wsizex)/2, (720-wsizey)/(count &g
     <widget source="Title" render="Label" position="10,25" size="900,50" font="Regular; 36" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1" />
     <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
     <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
-    <ePixmap pixmap="OPD-Blue-Line/buttons/key_yellow.png" position="629,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_blue.png" position="936,1018" size="35,35" alphatest="blend" />
     <widget source="key_red" render="Label" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
     <widget source="key_green" render="Label" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
     <widget source="key_yellow" render="Label" position="675,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
