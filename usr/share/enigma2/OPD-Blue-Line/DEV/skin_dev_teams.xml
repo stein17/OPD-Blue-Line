@@ -746,4 +746,15 @@
     <widget name="Timeline" position="30,903" size="850,50" backgroundColor="white" pointer="skin_default/position_arrow.png:3,5" foregroundColor="backgroundBlue" />
     <ePixmap pixmap="OPD-Blue-Line/mmp/mp_buttons.png" alphatest="blend" position="399,1013" size="450,56" transparent="1" zPosition="4" />
   </screen>
+<screen name="ModelPic" title="ModelPic" backgroundColor="transparent" flags="wfNoBorder" position="0,center" size="1920,1080" transparent="0">
+    <eLabel backgroundColor="#2c000000" foregroundColor="#2c000000" name="" position="30,center" size="880,940" zPosition="-15" />
+    <eLabel name="" foregroundColor="white" backgroundColor="#0044a2ff" position="170,130" size="720,2" zPosition="-9" />
+    <eLabel text="My Box" font="Regular; 34" backgroundColor="#2c000000" foregroundColor="white" position="170,73" size="200,50" transparent="1" valign="center" zPosition="3" />
+    <widget name="boxpic" alphatest="blend" position="170,center" size="650,380" transparent="1" halign="center" valign="center" />
+    <widget name="model" font="Regular; 34" backgroundColor="#2c000000" foregroundColor="white" halign="left" position="390,73" size="500,50" transparent="1" valign="center" />
+    <eLabel backgroundColor="#00383b43" foregroundColor="white" name="" position="60,center" size="100,1080" zPosition="-10" />
+    <eLabel backgroundColor="white" name="" position="170,945" size="720,2" zPosition="-9" />
+    <ePixmap alphatest="blend" pixmap="OPD-Blue-Line/buttons/key_blue.png" position="170,960" size="40,40" />
+    <widget name="key_blue" font="Regular; 28" backgroundColor="#2c000000" position="220,960" size="300,40" halign="left" valign="center" transparent="1" zPosition="1" />
+</screen>
 </skin>
