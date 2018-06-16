@@ -8199,6 +8199,8 @@ self.instance.move(ePoint((1920-wsizex), (1280-wsizex)/2, (720-wsizey)/(count &g
   <widget name="AboutScrollLabel" position="70,200" size="820,720" itemHeight="45" font="Regular;30" transparent="1" />
   <eLabel name="vertikalline" position="929,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
   <ePixmap pixmap="OPD-Blue-Line/icons/opd_icon.png" position="981,699" size="256,256" zPosition="2" alphatest="blend" />
+  <ePixmap alphatest="blend" pixmap="OPD-Blue-Line/buttons/key_leftright.png" position="871,1020" size="100,40" transparent="1" zPosition="10" />
+  <eLabel text="OPDCOMMITINFO" position="985,1020" size="600,110" zPosition="1" font="Regular; 30" halign="left" foregroundColor="blue" backgroundColor="background" borderColor="white" borderWidth="1" transparent="1" valign="top" />
 </screen>
 <screen backgroundColor="transparent" flags="wfNoBorder" name="AtileHD_Config" position="0,0" size="1280,1080" title="AtileHD Setup">
   <ePixmap pixmap="OPD-Blue-Line/menu/bg1280.png" position="0,0" zPosition="-20" size="1280,1080" />
