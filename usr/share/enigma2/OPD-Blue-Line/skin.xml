@@ -7667,14 +7667,14 @@ self.instance.move(ePoint((1920-wsizex), (1280-wsizex)/2, (720-wsizey)/(count &g
     <widget name="update" position="20,120" size="870,840" font="Regular;28" itemHeight="40" scrollbarMode="showOnDemand" transparent="1" zPosition="3" />
   </screen>
   <!--   BootImageChoose FHD -->
-  <screen name="OPENDROIDBootImageChoose" position="0,0" size="1920,1080" title="OPENDROID Multiboot Image Choose" backgroundColor="transparent" flags="wfNoBorder">
+  <screen name="OPDBootImageChoose" position="0,0" size="1920,1080" title="OPENDROID Multiboot Image Choose" backgroundColor="transparent" flags="wfNoBorder">
     <widget source="Title" render="Label" position="10,25" size="900,50" font="Regular; 36" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1" />
     <widget source="global.CurrentTime" render="Label" position="508,25" size="600,50" font="Regular; 36" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
     </widget>
     <ePixmap position="1006,133" size="210,540" pixmap="OPD-Blue-Line/DEV/opd.png" alphatest="blend" />
     <ePixmap pixmap="OPD-Blue-Line/menu/bg1280.png" position="0,0" zPosition="-20" size="1280,1080" />
-    <ePixmap position="981,699" size="256,256" pixmap="OPD-Blue-Line/icons/opd_icon.png" />
+    <ePixmap position="981,699" size="256,256" pixmap="OPD-Blue-Line/icons/multiboot.png" />
     <eLabel name="vertikalline" position="929,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
     <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
     <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
@@ -7706,7 +7706,7 @@ self.instance.move(ePoint((1920-wsizex), (1280-wsizex)/2, (720-wsizey)/(count &g
     <eLabel name="vertikalline" position="27,565" size="764,2" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
   </screen>
   <!-- ChooseOnLineImage FHD -->
-  <screen name="OPENDROIDChooseOnLineImage" position="0,0" size="1920,1080" title="OPENDROIDBoot - Download OnLine Images" backgroundColor="transparent" flags="wfNoBorder">
+  <screen name="OPDChooseOnLineImage" position="0,0" size="1920,1080" title="OPENDROIDBoot - Download OnLine Images" backgroundColor="transparent" flags="wfNoBorder">
   <widget source="global.CurrentTime" render="Label" position="515,28" size="600,40" font="Regular; 30" halign="right" backgroundColor="black" transparent="1">
     <convert type="ClockToText">Format:%A, %d.%m.%Y   %H:%M</convert>
   </widget>
@@ -7728,7 +7728,7 @@ self.instance.move(ePoint((1920-wsizex), (1280-wsizex)/2, (720-wsizey)/(count &g
 <eLabel text="OpenDroid" position="70,1020" size="1000,110" zPosition="1" font="Adam; 110" halign="left" foregroundColor="blue" backgroundColor="background" borderColor="white" borderWidth="1" transparent="1" valign="top" />
 </screen>
   <!--  BootInstallation FHD -->
-  <screen name="OPENDROIDBootInstallation" position="0,0" size="1920,1080" title="OPENDROID Multiboot Installation" backgroundColor="transparent" flags="wfNoBorder">
+  <screen name="OPDBootInstallation" position="0,0" size="1920,1080" title="OPENDROID Multiboot Installation" backgroundColor="transparent" flags="wfNoBorder">
     <ePixmap pixmap="OPD-Blue-Line/menu/bg1280.png" position="0,0" zPosition="-20" size="1280,1080" />
     <widget source="global.CurrentTime" render="Label" position="508,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
@@ -7748,7 +7748,7 @@ self.instance.move(ePoint((1920-wsizex), (1280-wsizex)/2, (720-wsizey)/(count &g
     <ePixmap pixmap="OPD-Blue-Line/icons/reboot.png" position="981,699" size="256,256" zPosition="2" alphatest="blend" />
   </screen>
   <!--   BootImageInstall FHD -->
-  <screen name="OPENDROIDBootImageInstall" position="0,0" size="1920,1080" title="OPENDROIDBoot - Image Installation" backgroundColor="transparent" flags="wfNoBorder">
+  <screen name="OPDBootImageInstall" position="0,0" size="1920,1080" title="OPENDROIDBoot - Image Installation" backgroundColor="transparent" flags="wfNoBorder">
     <ePixmap pixmap="OPD-Blue-Line/menu/bg1280.png" position="0,0" zPosition="-20" size="1280,1080" />
     <widget source="global.CurrentTime" render="Label" position="508,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
@@ -7758,8 +7758,12 @@ self.instance.move(ePoint((1920-wsizex), (1280-wsizex)/2, (720-wsizey)/(count &g
     <widget source="Title" render="Label" position="10,25" size="900,50" font="Regular; 36" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1" />
     <widget name="key_red" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
     <widget name="key_green" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget name="key_yellow" position="675,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget name="key_blue" position="983,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
     <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
     <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_yellow.png" position="629,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_blue.png" position="936,1018" size="35,35" alphatest="blend" />
     <widget name="config" position="70,180" size="820,680" font="Regular;30" itemHeight="40" scrollbarMode="showOnDemand" transparent="1" />
     <widget name="HelpWindow" position="160,700" size="1,1" transparent="1" alphatest="on" zPosition="5" />
     <ePixmap pixmap="OPD-Blue-Line/icons/reboot.png" position="981,699" size="256,256" zPosition="2" alphatest="blend" />

@@ -723,6 +723,7 @@
     <widget source="global.CurrentTime" render="Label" position="508,25" size="600,50" font="Regular; 36" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
     </widget>
+    <ePixmap position="981,699" size="256,256" zPosition="2" pixmap="OPD-Blue-Line/icons/multiboot.png" transparent="1" />
     <ePixmap pixmap="OPD-Blue-Line/menu/bg1280.png" position="0,0" zPosition="-20" size="1280,1080" />
     <ePixmap position="981,699" size="256,256" pixmap="OPD-Blue-Line/icons/plugin.png" alphatest="blend" />
     <eLabel name="vertikalline" position="929,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
@@ -749,92 +750,6 @@
 	"itemHeight": 80
 	}</convert>
     </widget>
-  </screen>
-  <!-- OPDManagerInstall FHD -->
-  <screen name="OPDManagerInstall" position="0,0" size="1920,1080" title="openMultiboot Install" backgroundColor="transparent" flags="wfNoBorder">
-    <widget source="Title" render="Label" position="10,25" size="900,50" font="Regular; 36" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1" />
-    <widget source="global.CurrentTime" render="Label" position="508,25" size="600,50" font="Regular; 36" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
-      <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
-    </widget>
-    <ePixmap pixmap="OPD-Blue-Line/menu/bg1280.png" position="0,0" zPosition="-20" size="1280,1080" />
-    <ePixmap position="981,699" size="256,256" pixmap="OPD-Blue-Line/icons/multiboot.png" />
-    <eLabel name="vertikalline" position="929,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
-    <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
-    <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
-    <ePixmap pixmap="OPD-Blue-Line/buttons/key_yellow.png" position="629,1018" size="35,35" alphatest="blend" />
-    <ePixmap pixmap="OPD-Blue-Line/buttons/key_blue.png" position="936,1018" size="35,35" alphatest="blend" />
-    <widget name="key_red" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
-    <widget name="key_green" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
-    <widget name="key_yellow" position="675,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
-    <widget name="key_blue" position="983,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
-    <widget name="info" position="24,124" size="865,593" font="Regular;32" itemHeight="45" scrollbarMode="showOnDemand" transparent="1" backgroundColor="black" />
-    <widget source="list" render="Listbox" position="32,132" size="1160,815" scrollbarMode="showOnDemand" transparent="1">
-      <convert type="TemplatedMultiContent">{"template": [
-	MultiContentEntryText(pos = (0, 10), size = (1100, 40), font=0, flags = RT_HALIGN_RIGHT, text = 0),
-	MultiContentEntryPixmapAlphaBlend(pos = (10, 0), size = (480, 60), png = 1),
-	MultiContentEntryText(pos = (0, 40), size = (1100, 40), font=1, flags = RT_VALIGN_TOP | RT_HALIGN_RIGHT, text = 3),
-	],
-	"fonts": [gFont("Regular", 34),gFont("Regular", 30)],
-	"itemHeight": 80
-	}</convert>
-    </widget>
-  </screen>
-  <!-- OPDBootImageChoose FHD -->
-  <screen name="OPDBootImageChoose" position="0,0" size="1920,1080" title="OPDBoot - Menu" backgroundColor="transparent" flags="wfNoBorder">
-    <widget source="Title" render="Label" position="10,25" size="900,50" font="Regular; 36" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1" />
-    <widget source="global.CurrentTime" render="Label" position="508,25" size="600,50" font="Regular; 36" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
-      <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
-    </widget>
-    <ePixmap pixmap="OPD-Blue-Line/menu/bg1280.png" position="0,0" zPosition="-20" size="1280,1080" />
-    <ePixmap position="981,699" size="256,256" pixmap="OPD-Blue-Line/icons/multiboot.png" />
-    <eLabel name="vertikalline" position="929,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
-    <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
-    <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
-    <ePixmap pixmap="OPD-Blue-Line/buttons/key_yellow.png" position="629,1018" size="35,35" alphatest="blend" />
-    <ePixmap pixmap="OPD-Blue-Line/buttons/key_blue.png" position="936,1018" size="35,35" alphatest="blend" />
-    <widget name="key_red" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
-    <widget name="key_green" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
-    <widget name="key_yellow" position="675,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
-    <widget name="key_blue" position="983,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
-    <widget name="label2" position="45,127" size="435,45" zPosition="1" font="Regular;30" backgroundColor="black" transparent="1" foregroundColor="white" />
-    <widget name="label3" position="45,202" size="435,45" zPosition="1" font="Regular;30" backgroundColor="black" transparent="1" foregroundColor="green" />
-    <widget name="label4" position="45,261" size="521,45" zPosition="1" font="Regular;30" backgroundColor="black" transparent="1" foregroundColor="green" />
-    <widget name="label5" position="45,320" size="521,45" zPosition="1" font="Regular;30" backgroundColor="black" transparent="1" foregroundColor="green" />
-    <widget name="label6" position="334,127" size="435,45" zPosition="1" halign="right" font="Regular;30" backgroundColor="black" foregroundColor="white" transparent="1" />
-    <widget name="label7" position="334,202" size="435,45" zPosition="1" halign="right" font="Regular;30" backgroundColor="black" foregroundColor="green" transparent="1" />
-    <widget name="label8" position="251,261" size="518,45" zPosition="1" halign="right" font="Regular;30" backgroundColor="black" foregroundColor="green" transparent="1" />
-    <widget name="label9" position="45,379" size="521,45" zPosition="1" halign="left" font="Regular;30" backgroundColor="black" foregroundColor="green" transparent="1" />
-    <widget name="label10" position="45,439" size="700,45" zPosition="1" font="Regular; 27" backgroundColor="black" transparent="1" foregroundColor="green" />
-    <widget name="label11" position="628,439" size="140,45" zPosition="1" halign="right" font="Regular; 27" backgroundColor="black" foregroundColor="green" transparent="1" />
-    <widget name="label1" position="45,498" size="724,66" zPosition="1" halign="center" font="Regular;27" backgroundColor="black" transparent="1" foregroundColor="white" />
-    <widget name="device_icon" pixmap="OPD-Blue-Line/icons/hdd.png" position="981,699" size="256,256" alphatest="on" />
-    <eLabel name="vertikalline" position="929,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
-    <widget name="free_space_progressbar" position="45,177" size="724,20" borderWidth="2" zPosition="3" backgroundColor="black" transparent="1" foregroundColor="green" />
-    <widget name="config" itemHeight="45" font="Regular;33" position="25,570" size="764,330" scrollbarMode="showOnDemand" transparent="1" backgroundColor="black" />
-    <ePixmap pixmap="OPD-Blue-Line/buttons/key_menu.png" position="333,910" size="60,50" alphatest="blend" />
-    <widget name="key_menu" position="394,919" size="190,30" zPosition="2" font="Regular; 24" halign="center" backgroundColor="black" transparent="1" />
-    <eLabel name="vertikalline" position="27,565" size="764,2" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
-  </screen>
-  <!-- OPDBootInstallation FHD -->
-  <screen name="OPDBootInstallation" position="0,0" size="1920,1080" title="OPDBoot - Installation" backgroundColor="transparent" flags="wfNoBorder">
-    <widget source="Title" render="Label" position="10,25" size="900,50" font="Regular; 36" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1" />
-    <widget source="global.CurrentTime" render="Label" position="508,25" size="600,50" font="Regular; 36" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
-      <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
-    </widget>
-    <ePixmap pixmap="OPD-Blue-Line/menu/bg1280.png" position="0,0" zPosition="-20" size="1280,1080" />
-    <ePixmap position="981,699" size="256,256" pixmap="OPD-Blue-Line/icons/multiboot.png" />
-    <eLabel name="vertikalline" position="929,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
-    <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
-    <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
-    <ePixmap pixmap="OPD-Blue-Line/buttons/key_yellow.png" position="629,1018" size="35,35" alphatest="blend" />
-    <ePixmap pixmap="OPD-Blue-Line/buttons/key_blue.png" position="936,1018" size="35,35" alphatest="blend" />
-    <widget name="key_red" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
-    <widget name="key_green" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
-    <widget name="key_yellow" position="675,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
-    <widget name="key_blue" position="983,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
-    <widget name="label1" position="30,130" size="875,160" zPosition="1" halign="center" font="Regular;36" backgroundColor="white" transparent="1" />
-    <widget name="label2" position="30,301" size="875,200" zPosition="1" halign="center" font="Regular;32" backgroundColor="white" transparent="1" />
-    <widget name="config" position="30,513" size="875,435" scrollbarMode="showOnDemand" transparent="1" backgroundColor="black" />
   </screen>
   <!-- CutListEditor FHD -->
   <screen backgroundColor="transparent" flags="wfNoBorder" name="CutListEditor" position="0,0" size="1920,1080" title="Cutlist editor">
