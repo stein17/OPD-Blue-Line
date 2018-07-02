@@ -78,7 +78,7 @@
     <parameter name="PluginBrowserDownloadName" value="120,3,45" />
     <parameter name="PluginBrowserDownloadDescr" value="120,50,50" />
     <parameter name="PluginBrowserDownloadIcon" value="0,0,120,85" />
-	<parameter name="SHOUTcastListItem" value="34,30,45,120,37,37,70,40"/>
+    <parameter name="SHOUTcastListItem" value="34,30,45,120,37,37,70,40"/>
     <parameter name="ServiceInfo" value="0,0,450,50" />
     <parameter name="ServiceInfoLeft" value="0,0,450,45" />
     <parameter name="ServiceInfoRight" value="450,0,1000,45" />
@@ -5807,17 +5807,28 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
   <!-- ExtraMessageBox -->
   <screen name="ExtraMessageBox" title="Extra Message" position="center,255" size="900,200">
     <widget name="message" position="10,10" size="880,40" font="Regular;30" />
-    <widget name="menu" position="10,60" size="880,360" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1" />
-    <applet type="onLayoutFinish">
+		<widget source="menu" render="Listbox" position="10,60" size="880,360" scrollbarMode="showOnDemand">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryPixmapAlphaTest(pos = (5, 0), size = (48, 48), png = 0),
+					MultiContentEntryText(pos = (65, 10), size = (425, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
+					],
+					"fonts": [gFont("Regular", 22)],
+					"itemHeight": 48
+				}
+			</convert>
+		</widget>
+		<applet type="onLayoutFinish">
 # this should be factored out into some helper code, but currently demonstrates applets.
 from enigma import eSize, ePoint
 
 orgwidth = self.instance.size().width()
+orgheight = self.instance.size().height()
 orgpos = self.instance.position()
-textsize = self["message"].getSize()
+textsize = self[&quot;message&quot;].getSize()
 
 # y size still must be fixed in font stuff...
-if self["message"].getText() != "":
+if self[&quot;message&quot;].getText() != &quot;&quot;:
 	textsize = (textsize[0] + 80, textsize[1] + 60)
 else:
 	textsize = (textsize[0] + 80, textsize[1] + 4)
@@ -5837,17 +5848,23 @@ wsize = (wsizex, wsizey)
 self.instance.resize(eSize(*wsize))
 
 # resize label
-self["message"].instance.resize(eSize(*textsize))
+self[&quot;message&quot;].instance.resize(eSize(*textsize))
 
 # move list
 listsize = (wsizex - 20, 48 * count)
-self["menu"].instance.move(ePoint(10, textsize[1] + 10))
-self["menu"].instance.resize(eSize(*listsize))
+self[&quot;menu&quot;].downstream_elements.downstream_elements.instance.move(ePoint(10, textsize[1] + 10))
+self[&quot;menu&quot;].downstream_elements.downstream_elements.instance.resize(eSize(*listsize))
 
 # center window
 newwidth = wsize[0]
-self.instance.move(ePoint((1920-wsizex), (1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3)))
-			</applet>
+newheight = wsize[1]
+self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()  + (orgheight - newheight)/2))
+		</applet>
+  </screen>
+    <!-- ExtraActionBox -->
+  <screen name="ExtraActionBox" position="center,center" size="560,70" title=" ">
+	<widget alphatest="on" name="logo" position="10,10" size="48,48" transparent="1" zPosition="2"/>
+	<widget font="Regular;20" halign="center" name="message" position="10,10" size="538,48" valign="center" />
   </screen>
 <!--MultiBootStartupOPT-->
 <screen name="MultiBootStartupOPT" position="0,0" size="1280,1080" backgroundColor="black" title="MultiBoot STARTUP Selector" flags="wfNoBorder" zPosition="9">
@@ -7738,8 +7755,12 @@ self.instance.move(ePoint((1920-wsizex), (1280-wsizex)/2, (720-wsizey)/(count &g
     <widget source="Title" render="Label" position="10,25" size="900,50" font="Regular; 36" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1" />
     <widget name="key_red" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
     <widget name="key_green" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget name="key_yellow" position="675,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget name="key_blue" position="983,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
     <ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
     <ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_yellow.png" position="629,1018" size="35,35" alphatest="blend" />
+    <ePixmap pixmap="OPD-Blue-Line/buttons/key_blue.png" position="936,1018" size="35,35" alphatest="blend" />
     <widget name="label1" position="70,180" size="820,80" zPosition="1" halign="center" valign="center" font="Regular;32" foregroundColor="cyan1" transparent="1" />
     <widget name="label2" position="70,314" size="820,240" zPosition="1" halign="center" font="Regular;30" transparent="1" />
     <widget name="config" position="70,609" size="820,280" font="Regular;30" itemHeight="40" scrollbarMode="showOnDemand" transparent="1" />
