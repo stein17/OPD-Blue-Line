@@ -31,7 +31,7 @@
     <widget source="global.CurrentTime" render="Label" position="508,30" size="600,40" font="Regular; 32" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
     </widget>
-<ePixmap position="998,126" size="210,540" pixmap="OPD-Blue-Line/DEV/opd.png" alphatest="blend" />
+    <ePixmap position="998,126" size="210,540" pixmap="OPD-Blue-Line/DEV/opd.png" alphatest="blend" />
     <ePixmap position="981,699" size="256,256" pixmap="OPD-Blue-Line/icons/info.png" />
     <eLabel name="vertikalline" position="929,120" size="2,840" foregroundColor="backgroundBlue" backgroundColor="backgroundBlue" />
     <ePixmap pixmap="OPD-Blue-Line/buttons/key_info.png" position="1052,1011" size="60,50" zPosition="10" transparent="1" alphatest="blend" />
@@ -972,6 +972,25 @@
     <widget name="key_yellow" position="675,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
     <widget name="key_blue" position="983,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
     </screen>
+    	<!--BootLogoSelector -->
+    <screen backgroundColor="transparent" flags="wfNoBorder" name="opdBootLogoSelector" position="0,0" size="1920,1080" title="OPD BootLogo Selector">
+    <ePixmap position="998,126" size="210,540" pixmap="OPD-Blue-Line/DEV/opd.png" alphatest="blend" />
+    <widget source="Title" render="Label" position="10,25" size="900,50" font="Regular; 36" halign="left" valign="center" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="1" />
+    <ePixmap pixmap="OPD-Blue-Line/menu/bg1280.png" position="0,0" zPosition="-20" size="1280,1080" />
+    <widget source="global.CurrentTime" render="Label" position="508,25" size="600,50" font="Regular; 36" halign="right" foregroundColor="white" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
+    </widget>
+		<ePixmap pixmap="OPD-Blue-Line/buttons/key_green.png" position="325,1018" size="35,35" alphatest="blend" /> 
+		<ePixmap pixmap="OPD-Blue-Line/buttons/key_red.png" position="23,1018" size="35,35" alphatest="blend" />
+		 <widget name="key_red" position="67,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" />
+    <widget name="key_green" position="370,1000" size="240,70" zPosition="1" valign="center" font="Regular; 27" halign="left" backgroundColor="black" transparent="1" /> 
+		<widget name="config" position="70,180" size="820,630" font="Regular;32" scrollbarMode="showOnDemand" itemHeight="45" backgroundColor="header" transparent="1"/> 
+		<eLabel text="Preview" position="1260,600" size="610,70" font="Regular;40" halign="center" valign="center" backgroundColor="#0073c6ff" transparent="1" zPosition="2" /> 
+		<eLabel position="1260,600" size="610,70" backgroundColor="#0020fc" zPosition="1"/> 
+		<eLabel position="1260,680" size="610,267" backgroundColor="#20000000" zPosition="1"/>
+		<widget name="Preview" position="1260,680" size="610,267" alphatest="on" zPosition="10"/> 
+		<ePixmap pixmap="OPD-Blue-Line/icons/opd_icon.png" position="950,670" size="256,256" zPosition="2" alphatest="blend" />
+	</screen>
      <!-- OPD HddFastRemove FHD  -->
     <screen backgroundColor="transparent" flags="wfNoBorder" name="HddFastRemove" position="0,0" size="1920,1080" title="Hard Drive Fast Umount">
     <ePixmap pixmap="OPD-Blue-Line/menu/bg1280.png" position="0,0" zPosition="-20" size="1280,1080" />

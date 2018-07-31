@@ -130,6 +130,7 @@
     <color name="black" value="#00000000" />
     <color name="blue" value="#000066cc" />
     <color name="blue2" value="#000051c0" />
+    <color name="trbluette" value="#3f4cff" />
     <color name="blue3" value="#000069fb" />
     <color name="bluelabel" value="#00003399" />
     <color name="bluetitle" value="#0050bbff" />
@@ -157,6 +158,7 @@
     <color name="transparent" value="#ffffffff" />
     <color name="transparent2" value="#ff000000" />
     <color name="trbluelabel" value="#20003399" />
+    <color name="bluette" value="#0020fc"/>
     <color name="trlightblue" value="#2066ccff" />
     <color name="white" value="#00ffffff" />
     <color name="yellow" value="#00ffcc00" />
