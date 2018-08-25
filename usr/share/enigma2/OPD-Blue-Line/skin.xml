@@ -58,6 +58,8 @@
   </fonts>
 <parameters>
     <parameter name="ConfigListSeperator" value="580" />
+    <parameter name="AllowUserDatesAndTimes" value="1,1"/>
+    <parameter name="AllowUserDatesAndTimes" value="x,y" />
     <parameter name="ChoicelistDash" value="0,3,1000,50" />
     <parameter name="ChoicelistName" value="85,3,1000,50" />
     <parameter name="ChoicelistIcon" value="10,4,64,50" />
@@ -139,6 +141,8 @@
     <color name="dark" value="#00303340" />
     <color name="darkbluelabel" value="#00002672" />
     <color name="darkgrey" value="#00999999" />
+    <color name="OE_Background" value="#2c000000" />
+    <color name="OE_NewBg2" value="#00383b43" />
     <color name="darkred" value="#00a00000" />
     <color name="extrdarkred" value="#21000000" />
     <color name="foregroundClock" value="#00ccffff" />
